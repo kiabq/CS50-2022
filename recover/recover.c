@@ -32,7 +32,6 @@ int main(int argc, char *argv[])
     
     char *extension = ".jpeg";
     
-    
     while (fread(buffer, sizeof *buffer, bSize, fp) == bSize) {
         bool nImg = (
                 buffer[0] == 0xff && 
